@@ -1,0 +1,431 @@
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+body {
+    margin: 0;
+    background-color: #0b0b0b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================================
+   SITE HEADER
+   ========================================================= */
+
+.site-header {
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.banner-logo {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+
+/* =========================================================
+   HIGHGROUND INTRODUCTION
+   ========================================================= */
+
+.about {
+    text-align: center;
+    padding: 70px 20px 30px;
+    color: white;
+}
+
+.about-layout {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.about-image {
+    flex: 0 0 300px;
+}
+
+.about-logo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.about-content {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-text {
+    max-width: 750px;
+    margin: 0 auto 18px;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.about-content .about-text {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.about h1 {
+    margin: 0 0 10px;
+    font-size: 2.4rem;
+    letter-spacing: 3px;
+}
+
+.tagline {
+    margin: 0 0 35px;
+    color: #d4af37;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+}
+
+.about-content .tagline {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.coming-soon {
+    margin-top: 35px;
+    color: #d4af37;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.about-content .coming-soon {
+    text-align: left;
+}
+
+
+/* =========================================================
+   PROJECTS / THE PIT STOP
+   ========================================================= */
+
+.projects {
+    color: white;
+    padding: 30px 20px 60px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-heading h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+.section-heading p {
+    color: #d4af37;
+    font-size: 1.1rem;
+}
+
+.pit-stop {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pit-stop-layout {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.pit-stop-content {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+}
+
+.pit-stop-image {
+    flex: 0 0 400px;
+    text-align: center;
+}
+
+.pit-stop-logo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.project-intro {
+    max-width: 750px;
+    margin: 25px auto 15px;
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+.pit-stop-content .project-intro {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.project-text {
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.pit-stop-content .project-text {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.project-status {
+    margin-top: 30px;
+    color: #d4af37;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   MEET THE MECHANIX
+   ========================================================= */
+
+.mechanix-section {
+    text-align: center;
+    color: white;
+}
+
+.mechanix-section > h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+.mechanix-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 40px auto 0;
+}
+
+.mechanix-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.mechanix h3 {
+    color: #d4af37;
+}
+
+.mechanix-intro {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+    text-align: center;
+    color: white;
+}
+
+.mechanix-intro p {
+    margin: 0 auto 15px;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+
+/* =========================================================
+   VEHICLE COLLECTION & GAME SYSTEMS
+   ========================================================= */
+
+.vehicle-systems {
+    padding: 80px 20px;
+    color: white;
+}
+
+.vehicle-systems-layout {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.vehicle-systems-content {
+    flex: 1;
+    text-align: left;
+}
+
+.vehicle-systems h2 {
+    margin-bottom: 25px;
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+.vehicle-systems p {
+    margin: 0 auto 18px;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.vehicle-intro {
+    font-size: 1.2rem;
+}
+
+.concept-note {
+    margin-top: 30px;
+    color: #d4af37;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/* Vehicle card fan */
+
+.card-fan {
+    position: relative;
+    flex: 0 0 400px;
+    height: 420px;
+}
+
+.card-fan img {
+    position: absolute;
+    width: 230px;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform-origin: bottom center;
+}
+
+.card-fan img:nth-child(1) {
+    transform: translate(-75%, -50%) rotate(-12deg);
+}
+
+.card-fan img:nth-child(2) {
+    transform: translate(-63%, -52%) rotate(-6deg);
+}
+
+.card-fan img:nth-child(3) {
+    transform: translate(-50%, -54%);
+    z-index: 5;
+}
+
+.card-fan img:nth-child(4) {
+    transform: translate(-37%, -52%) rotate(6deg);
+}
+
+.card-fan img:nth-child(5) {
+    transform: translate(-25%, -50%) rotate(12deg);
+}
+
+
+/* =========================================================
+   JAR JAR
+   ========================================================= */
+
+.jarjar {
+    padding: 80px 20px;
+    color: white;
+}
+
+.jarjar-layout {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.jarjar-content {
+    flex: 1;
+    text-align: left;
+}
+
+.jarjar h2 {
+    margin: 10px 0 25px;
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+.jarjar p {
+    margin: 0 auto 18px;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.jarjar-intro {
+    font-size: 1.2rem;
+}
+
+.jarjar-visual {
+    position: relative;
+    flex: 0 0 400px;
+    height: 520px;
+}
+
+
+/* Jar Jar app screenshots */
+
+.jarjar-screen {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.jarjar-screen-back {
+    left: 0;
+    top: 20px;
+    transform: rotate(-4deg);
+    opacity: 0.8;
+}
+
+.jarjar-screen-front {
+    right: 20px;
+    top: 0;
+    z-index: 2;
+    transform: rotate(2deg);
+}
+
+
+/* =========================================================
+   WHAT'S NEXT
+   ========================================================= */
+
+.more-coming {
+    padding: 100px 20px;
+    color: white;
+    text-align: center;
+}
+
+.more-coming-content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.more-coming h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+.more-coming p {
+    margin: 0 auto 18px;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.more-coming-intro {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.more-coming .concept-note {
+    margin-top: 35px;
+}
