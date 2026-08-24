@@ -535,4 +535,14 @@ body {
     .more-coming {
         padding: 60px 20px;
     }
+   body::before {
+       content: "MOBILE CSS ACTIVE";
+       position: fixed;
+       top: 0;
+       left: 0;
+       background: red;
+       color: white;
+       padding: 5px;
+       z-index: 9999;
+   }
 }
