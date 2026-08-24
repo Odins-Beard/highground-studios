@@ -429,3 +429,110 @@ body {
 .more-coming .concept-note {
     margin-top: 35px;
 }
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    /* Highground introduction */
+
+    .about {
+        padding: 40px 20px 30px;
+    }
+
+    .about-layout {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-image {
+        flex: none;
+        width: 220px;
+    }
+
+    .about-content {
+        width: 100%;
+        max-width: none;
+    }
+
+
+    /* The Pit Stop */
+
+    .pit-stop-layout {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .pit-stop-content {
+        width: 100%;
+        max-width: none;
+    }
+
+    .pit-stop-image {
+        flex: none;
+        width: 100%;
+    }
+
+
+    /* Mechanix */
+
+    .mechanix-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+    }
+
+
+    /* Vehicle Collection */
+
+    .vehicle-systems {
+        padding: 50px 20px;
+    }
+
+    .vehicle-systems-layout {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .vehicle-systems-content {
+        width: 100%;
+    }
+
+    .card-fan {
+        flex: none;
+        width: 100%;
+        max-width: 360px;
+        height: 380px;
+    }
+
+
+    /* Jar Jar */
+
+    .jarjar {
+        padding: 50px 20px;
+    }
+
+    .jarjar-layout {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .jarjar-content {
+        width: 100%;
+    }
+
+    .jarjar-visual {
+        flex: none;
+        width: 100%;
+        max-width: 360px;
+        height: 500px;
+    }
+
+
+    /* What's Next */
+
+    .more-coming {
+        padding: 60px 20px;
+    }
+}
