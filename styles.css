@@ -434,16 +434,22 @@ body {
    MOBILE
    ========================================================= */
 
-   body::before {
-       content: "DESKTOP CSS";
-       position: fixed;
-       top: 0;
-       left: 0;
-       background: blue;
-       color: white;
-       padding: 5px;
-       z-index: 9999;
-   }
+/* =========================================================
+   MOBILE DIAGNOSTIC - uncomment for troubleshooting
+   ========================================================= */
+
+      /*
+      body::before {
+          content: "DESKTOP CSS";
+          position: fixed;
+          top: 0;
+          left: 0;
+          background: blue;
+          color: white;
+          padding: 5px;
+          z-index: 9999;
+      }
+      */
 
 @media (max-width: 900px) {
 
@@ -546,8 +552,10 @@ body {
     .more-coming {
         padding: 60px 20px;
     }
+   /*
    body::before {
        content: "MOBILE CSS ACTIVE";
        background: red;
    }
+   */
 }
