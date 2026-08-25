@@ -578,3 +578,63 @@ body {
    }
    */
 }
+
+
+/* =========================================================
+   BEHIND HIGHGROUND STUDIOS
+   ========================================================= */
+
+.behind-highground {
+    padding: 50px 20px 70px;
+    color: white;
+}
+
+.behind-highground-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.behind-highground h2 {
+    margin: 0 0 30px;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+.behind-highground p {
+    margin: 0 0 18px;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.behind-highground-signature {
+    margin-top: 30px !important;
+    color: #d4af37;
+    font-weight: bold;
+}
+/* =========================================================
+   WHAT WE'RE WORKING ON
+   ========================================================= */
+
+.work-intro {
+    padding: 50px 20px 20px;
+    color: white;
+}
+
+.work-intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.work-intro h2 {
+    margin: 0 0 25px;
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+.work-intro p {
+    margin: 0 auto 18px;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
