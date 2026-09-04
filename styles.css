@@ -5,7 +5,39 @@
 body {
     margin: 0;
     background-color: #0b0b0b;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================================
+   GLOBAL HEADING HIERARCHY
+   ========================================================= */
+
+h1,
+h2,
+h3,
+h4 {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2.4rem;
+    letter-spacing: 3px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+}
+
+h3 {
+    font-size: 1.75rem;
+    letter-spacing: 3px;
+}
+
+h4 {
+    font-size: 1.15rem;
 }
 
 
@@ -30,9 +62,7 @@ body {
    ========================================================= */
 
 .about {
-    text-align: center;
     padding: 70px 20px 30px;
-    color: white;
 }
 
 .about-layout {
@@ -60,22 +90,15 @@ body {
     text-align: left;
 }
 
-.about-text {
-    max-width: 750px;
-    margin: 0 auto 18px;
-    line-height: 1.7;
-    font-size: 1.05rem;
-}
-
-.about-content .about-text {
-    margin-left: 0;
-    margin-right: 0;
-}
-
 .about h1 {
     margin: 0 0 10px;
-    font-size: 2.4rem;
-    letter-spacing: 3px;
+}
+
+.about-text {
+    max-width: 750px;
+    margin: 0 0 18px;
+    line-height: 1.7;
+    font-size: 1.05rem;
 }
 
 .tagline {
@@ -85,11 +108,6 @@ body {
     letter-spacing: 2px;
 }
 
-.about-content .tagline {
-    margin-left: 0;
-    margin-right: 0;
-}
-
 .coming-soon {
     margin-top: 35px;
     color: #d4af37;
@@ -97,8 +115,60 @@ body {
     letter-spacing: 1px;
 }
 
-.about-content .coming-soon {
-    text-align: left;
+
+/* =========================================================
+   BEHIND HIGHGROUND STUDIOS
+   ========================================================= */
+
+.behind-highground {
+    padding: 50px 20px 70px;
+}
+
+.behind-highground-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.behind-highground h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.behind-highground p {
+    margin: 0 0 18px;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.behind-highground-signature {
+    margin-top: 30px !important;
+    color: #d4af37;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   WHAT WE'RE WORKING ON
+   ========================================================= */
+
+.work-intro {
+    padding: 50px 20px 20px;
+}
+
+.work-intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.work-intro h2 {
+    margin-bottom: 25px;
+}
+
+.work-intro p {
+    margin: 0 auto 18px;
+    line-height: 1.7;
+    font-size: 1.05rem;
 }
 
 
@@ -107,30 +177,12 @@ body {
    ========================================================= */
 
 .projects {
-    color: white;
     padding: 30px 20px 60px;
-}
-
-.section-heading {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.section-heading h2 {
-    margin-bottom: 10px;
-    font-size: 2rem;
-    letter-spacing: 3px;
-}
-
-.section-heading p {
-    color: #d4af37;
-    font-size: 1.1rem;
 }
 
 .pit-stop {
     max-width: 1000px;
     margin: 0 auto;
-    text-align: center;
 }
 
 .pit-stop-layout {
@@ -147,6 +199,10 @@ body {
     text-align: left;
 }
 
+.pit-stop-content h3 {
+    margin-bottom: 25px;
+}
+
 .pit-stop-image {
     flex: 0 0 400px;
     text-align: center;
@@ -160,25 +216,15 @@ body {
 
 .project-intro {
     max-width: 750px;
-    margin: 25px auto 15px;
+    margin: 0 0 15px;
     font-size: 1.25rem;
     line-height: 1.6;
 }
 
-.pit-stop-content .project-intro {
-    margin-left: 0;
-    margin-right: 0;
-}
-
 .project-text {
     max-width: 750px;
-    margin: 0 auto;
+    margin: 0;
     line-height: 1.7;
-}
-
-.pit-stop-content .project-text {
-    margin-left: 0;
-    margin-right: 0;
 }
 
 .project-status {
@@ -195,14 +241,10 @@ body {
 
 .mechanix-section {
     text-align: center;
-    color: white;
 }
 
-.mechanix-section > h2 {
-    color: white;
+.mechanix-section > h3 {
     margin-bottom: 20px;
-    font-size: 2rem;
-    letter-spacing: 3px;
 }
 
 .mechanix-grid {
@@ -219,7 +261,7 @@ body {
     display: block;
 }
 
-.mechanix h3 {
+.mechanix h4 {
     color: #d4af37;
 }
 
@@ -228,7 +270,6 @@ body {
     margin: 0 auto 40px;
     padding: 0 20px;
     text-align: center;
-    color: white;
 }
 
 .mechanix-intro p {
@@ -244,7 +285,6 @@ body {
 
 .vehicle-systems {
     padding: 80px 20px;
-    color: white;
 }
 
 .vehicle-systems-layout {
@@ -260,14 +300,12 @@ body {
     text-align: left;
 }
 
-.vehicle-systems h2 {
+.vehicle-systems h3 {
     margin-bottom: 25px;
-    font-size: 2rem;
-    letter-spacing: 3px;
 }
 
 .vehicle-systems p {
-    margin: 0 auto 18px;
+    margin: 0 0 18px;
     line-height: 1.7;
     font-size: 1.05rem;
 }
@@ -284,7 +322,9 @@ body {
 }
 
 
-/* Vehicle card fan */
+/* =========================================================
+   VEHICLE CARD FAN
+   ========================================================= */
 
 .card-fan {
     position: relative;
@@ -324,12 +364,48 @@ body {
 
 
 /* =========================================================
+   APPS INTRO
+   ========================================================= */
+
+.apps-intro {
+    padding: 80px 20px 40px;
+}
+
+.apps-intro-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.apps-intro h2 {
+    margin-bottom: 25px;
+}
+
+.apps-tagline {
+    margin: 0 0 25px;
+    color: #d4af37;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.apps-intro p {
+    max-width: 800px;
+    margin: 0 0 18px;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.apps-intro strong {
+    color: #d4af37;
+}
+
+
+/* =========================================================
    JAR JAR
    ========================================================= */
 
 .jarjar {
     padding: 80px 20px;
-    color: white;
 }
 
 .jarjar-layout {
@@ -345,14 +421,12 @@ body {
     text-align: left;
 }
 
-.jarjar h2 {
+.jarjar h3 {
     margin: 10px 0 25px;
-    font-size: 2rem;
-    letter-spacing: 3px;
 }
 
 .jarjar p {
-    margin: 0 auto 18px;
+    margin: 0 0 18px;
     line-height: 1.7;
     font-size: 1.05rem;
 }
@@ -368,7 +442,9 @@ body {
 }
 
 
-/* Jar Jar app screenshots */
+/* =========================================================
+   JAR JAR SCREENSHOTS
+   ========================================================= */
 
 .jarjar-screen {
     position: absolute;
@@ -391,6 +467,80 @@ body {
     transform: rotate(2deg);
 }
 
+
+/* =========================================================
+   GYMPRO
+   ========================================================= */
+
+.gympro {
+    padding: 80px 20px;
+}
+
+.gympro-layout {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.gympro-content {
+    flex: 1;
+    text-align: left;
+}
+
+.gympro h3 {
+    margin: 10px 0 25px;
+}
+
+.gympro p {
+    margin: 0 0 18px;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.gympro-intro {
+    font-size: 1.2rem;
+}
+
+.gympro-visual {
+    position: relative;
+    flex: 0 0 400px;
+    height: 520px;
+}
+
+
+/* =========================================================
+   GYMPRO SCREENSHOTS
+   ========================================================= */
+
+.gympro-screen {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    border: 1px solid #888;
+    border-radius: 12px;
+}
+
+.gympro-screen-back {
+    left: 0;
+    top: 20px;
+    transform: rotate(-4deg);
+    opacity: 0.8;
+}
+
+.gympro-screen-front {
+    right: 20px;
+    top: 0;
+    z-index: 2;
+    transform: rotate(2deg);
+}
+
+
+/* =========================================================
+   DOWNLOAD BUTTON
+   ========================================================= */
+
 .download-button {
     display: inline-block;
     margin-top: 24px;
@@ -412,12 +562,42 @@ body {
 
 
 /* =========================================================
+   HIGHGROUND CLOTHING
+   ========================================================= */
+
+.highground-clothing {
+    padding: 80px 20px;
+}
+
+.highground-clothing-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.highground-clothing h2 {
+    margin-bottom: 25px;
+}
+
+.highground-clothing p {
+    max-width: 800px;
+    margin: 0 0 18px;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.clothing-concept {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 45px;
+}
+
+/* =========================================================
    WHAT'S NEXT
    ========================================================= */
 
 .more-coming {
     padding: 100px 20px;
-    color: white;
     text-align: center;
 }
 
@@ -427,11 +607,7 @@ body {
 }
 
 .more-coming h2 {
-    margin-top: 0;
     margin-bottom: 25px;
-    color: white;
-    font-size: 2rem;
-    letter-spacing: 3px;
 }
 
 .more-coming p {
@@ -449,28 +625,25 @@ body {
     margin-top: 35px;
 }
 
+
 /* =========================================================
    MOBILE
    ========================================================= */
 
-/* =========================================================
-   MOBILE DIAGNOSTIC - uncomment for troubleshooting
-   ========================================================= */
-
-      /*
-      body::before {
-          content: "DESKTOP CSS";
-          position: fixed;
-          top: 0;
-          left: 0;
-          background: blue;
-          color: white;
-          padding: 5px;
-          z-index: 9999;
-      }
-      */
-
 @media (max-width: 900px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.9rem;
+    }
+
+    h3 {
+        font-size: 1.7rem;
+    }
+
 
     /* Highground introduction */
 
@@ -543,6 +716,13 @@ body {
     }
 
 
+    /* Apps */
+
+    .apps-intro {
+        padding: 60px 20px 30px;
+    }
+
+
     /* Jar Jar */
 
     .jarjar {
@@ -566,75 +746,32 @@ body {
     }
 
 
+    /* GymPro */
+
+    .gympro {
+        padding: 50px 20px;
+    }
+
+    .gympro-layout {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .gympro-content {
+        width: 100%;
+    }
+
+    .gympro-visual {
+        flex: none;
+        width: 100%;
+        max-width: 360px;
+        height: 500px;
+    }
+
+
     /* What's Next */
 
     .more-coming {
         padding: 60px 20px;
     }
-   /*
-   body::before {
-       content: "MOBILE CSS ACTIVE";
-       background: red;
-   }
-   */
-}
-
-
-/* =========================================================
-   BEHIND HIGHGROUND STUDIOS
-   ========================================================= */
-
-.behind-highground {
-    padding: 50px 20px 70px;
-    color: white;
-}
-
-.behind-highground-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.behind-highground h2 {
-    margin: 0 0 30px;
-    text-align: center;
-    font-size: 2rem;
-    letter-spacing: 3px;
-}
-
-.behind-highground p {
-    margin: 0 0 18px;
-    line-height: 1.7;
-    font-size: 1.05rem;
-}
-
-.behind-highground-signature {
-    margin-top: 30px !important;
-    color: #d4af37;
-    font-weight: bold;
-}
-/* =========================================================
-   WHAT WE'RE WORKING ON
-   ========================================================= */
-
-.work-intro {
-    padding: 50px 20px 20px;
-    color: white;
-}
-
-.work-intro-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.work-intro h2 {
-    margin: 0 0 25px;
-    font-size: 2rem;
-    letter-spacing: 3px;
-}
-
-.work-intro p {
-    margin: 0 auto 18px;
-    line-height: 1.7;
-    font-size: 1.05rem;
 }
