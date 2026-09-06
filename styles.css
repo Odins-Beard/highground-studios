@@ -401,7 +401,7 @@ h4 {
 
 
 /* =========================================================
-   JAR JAR
+   BUDGET SAVER
    ========================================================= */
 
 .jarjar {
@@ -435,38 +435,80 @@ h4 {
     font-size: 1.2rem;
 }
 
-.jarjar-visual {
-    position: relative;
-    flex: 0 0 400px;
-    height: 520px;
-}
-
 
 /* =========================================================
-   JAR JAR SCREENSHOTS
+   BUDGET SAVER SCREENSHOTS
    ========================================================= */
+
+.jarjar-visual {
+    position: relative;
+    flex: 0 0 500px;
+    height: 540px;
+}
 
 .jarjar-screen {
     position: absolute;
-    width: 250px;
+    width: 245px;
     height: auto;
+    border: 1px solid #888;
     border-radius: 12px;
 }
 
-.jarjar-screen-back {
-    left: 0;
-    top: 20px;
-    transform: rotate(-4deg);
-    opacity: 0.8;
+.jarjar-screen-left {
+    left: -20px;
+    top: 35px;
+    transform: rotate(-6deg);
+    opacity: 0.82;
+    z-index: 1;
+}
+
+.jarjar-screen-right {
+    right: -20px;
+    top: 35px;
+    transform: rotate(6deg);
+    opacity: 0.82;
+    z-index: 1;
 }
 
 .jarjar-screen-front {
-    right: 20px;
+    left: 50%;
     top: 0;
-    z-index: 2;
-    transform: rotate(2deg);
+    transform: translateX(-50%);
+    z-index: 3;
 }
 
+.jarjar-screen {
+    transition: transform 0.25s ease, opacity 0.25s ease;
+    cursor: pointer;
+}
+
+.jarjar-screen-left:hover {
+    transform: rotate(-2deg) scale(1.08);
+    opacity: 1;
+    z-index: 10;
+}
+
+.jarjar-screen-right:hover {
+    transform: rotate(2deg) scale(1.08);
+    opacity: 1;
+    z-index: 10;
+}
+
+.jarjar-screen-front:hover {
+    transform: translateX(-50%) scale(1.08);
+    z-index: 10;
+}
+
+.screenshot-hint {
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    color: #888;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+}
 
 /* =========================================================
    GYMPRO
@@ -503,47 +545,83 @@ h4 {
     font-size: 1.2rem;
 }
 
-.gympro-visual {
-    position: relative;
-    flex: 0 0 400px;
-    height: 520px;
-}
-
 
 /* =========================================================
    GYMPRO SCREENSHOTS
    ========================================================= */
 
+.gympro-visual {
+    position: relative;
+    flex: 0 0 500px;
+    height: 540px;
+}
+
 .gympro-screen {
     position: absolute;
-    width: 250px;
+    width: 245px;
     height: auto;
     border: 1px solid #888;
     border-radius: 12px;
+    cursor: pointer;
 }
 
-.gympro-screen-back {
-    left: 0;
-    top: 20px;
-    transform: rotate(-4deg);
-    opacity: 0.8;
+.gympro-screen-left {
+    left: -20px;
+    top: 35px;
+    transform: rotate(-6deg);
+    opacity: 0.82;
+    z-index: 1;
+}
+
+.gympro-screen-right {
+    right: -20px;
+    top: 35px;
+    transform: rotate(6deg);
+    opacity: 0.82;
+    z-index: 1;
 }
 
 .gympro-screen-front {
-    right: 20px;
+    left: 50%;
     top: 0;
-    z-index: 2;
-    transform: rotate(2deg);
+    transform: translateX(-50%);
+    z-index: 3;
 }
 
+.gympro-screen {
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.gympro-screen-left:hover {
+    transform: rotate(-2deg) scale(1.08);
+    opacity: 1;
+    z-index: 10;
+}
+
+.gympro-screen-right:hover {
+    transform: rotate(2deg) scale(1.08);
+    opacity: 1;
+    z-index: 10;
+}
+
+.gympro-screen-front:hover {
+    transform: translateX(-50%) scale(1.08);
+    z-index: 10;
+}
 
 /* =========================================================
-   DOWNLOAD BUTTON
+   DOWNLOAD BUTTONS
    ========================================================= */
+
+.app-downloads {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+}
 
 .download-button {
     display: inline-block;
-    margin-top: 24px;
     padding: 12px 22px;
     border: 1px solid #d4af37;
     border-radius: 6px;
@@ -560,6 +638,17 @@ h4 {
     color: #000;
 }
 
+.download-button-disabled {
+    border-color: #666;
+    color: #777;
+    cursor: default;
+    user-select: none;
+}
+
+.download-button-disabled:hover {
+    background: transparent;
+    color: #777;
+}
 
 /* =========================================================
    HIGHGROUND CLOTHING
@@ -738,12 +827,16 @@ h4 {
         width: 100%;
     }
 
-    .jarjar-visual {
-        flex: none;
-        width: 100%;
-        max-width: 360px;
-        height: 500px;
-    }
+ .jarjar-visual {
+    flex: none;
+    width: 100%;
+    max-width: 390px;
+    height: 500px;
+}
+
+.jarjar-screen {
+    width: 205px;
+}
 
 
     /* GymPro */
@@ -761,12 +854,16 @@ h4 {
         width: 100%;
     }
 
-    .gympro-visual {
-        flex: none;
-        width: 100%;
-        max-width: 360px;
-        height: 500px;
-    }
+.gympro-visual {
+    flex: none;
+    width: 100%;
+    max-width: 390px;
+    height: 500px;
+}
+
+.gympro-screen {
+    width: 205px;
+}
 
 
     /* What's Next */
