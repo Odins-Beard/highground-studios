@@ -451,9 +451,8 @@ h4 {
     left: 50%;
     top: 50%;
     transform-origin: bottom center;
-    transition: transform 0.25s ease, opacity 0.25s ease;
+    transition: transform 0.25s ease;
     cursor: pointer;
-    opacity: 0.82;
 }
 
 .card-fan img:nth-child(1) {
