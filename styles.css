@@ -1130,4 +1130,31 @@ h4 {
     .more-coming {
         padding: 60px 20px;
     }
+
+.pit-stop-temp {
+    margin-top: 12px;
+    max-width: 560px;
+    color: #aaa;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.pit-stop-button {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 10px 18px;
+    border: 1px solid #d4af37;
+    border-radius: 4px;
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.pit-stop-button:hover {
+    background: #d4af37;
+    color: #111;
+}
+
 }
