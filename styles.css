@@ -258,6 +258,76 @@ h4 { font-size:1.15rem; }
     z-index: 10;
 }
 
+
+/* =========================================================
+   POOL SHARK - FOUR SCREENSHOT LAYOUT
+   ========================================================= */
+
+.poolshark-screen-left {
+    left: -35px;
+    top: 55px;
+    transform: rotate(-7deg);
+    opacity: .92;
+    z-index: 1;
+}
+
+.poolshark-screen-sessions {
+    left: 80px;
+    top: 35px;
+    transform: rotate(-4deg);
+    opacity: .94;
+    z-index: 2;
+}
+
+.poolshark-screen-right {
+    left: 195px;
+    right: auto;
+    top: 18px;
+    transform: rotate(-1deg);
+    opacity: .97;
+    z-index: 3;
+}
+
+.poolshark-screen-front {
+    left: auto;
+    right: -35px;
+    top: 0;
+    transform: rotate(4deg);
+    opacity: 1;
+    z-index: 4;
+}
+
+/* Hover effects */
+
+.poolshark-screen-left:hover {
+    transform: rotate(-3deg) scale(1.08);
+    opacity: 1;
+    z-index: 10;
+}
+
+.poolshark-screen-sessions:hover {
+    transform: rotate(-1deg) scale(1.08);
+    opacity: 1;
+    z-index: 10;
+}
+
+.poolshark-screen-right:hover {
+    transform: rotate(0deg) scale(1.08);
+    opacity: 1;
+    z-index: 10;
+}
+
+.poolshark-screen-front:hover {
+    transform: rotate(1deg) scale(1.08);
+    opacity: 1;
+    z-index: 10;
+}
+
+.poolshark-visual .screenshot-hint {
+    bottom: -125px;
+}
+
+
 .screenshot-hint { position:absolute; bottom:-100px; width:100%; margin:0; text-align:center; color:#888; font-size:.8rem; letter-spacing:.5px; }
 
 .gympro-screen-1 { left:-35px; top:55px; transform:rotate(-7deg); opacity:.92; z-index:1; }
