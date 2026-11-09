@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Android Installation | Highground Studios</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/images/logo-clean.png">
+  <style>
+    .android-main{max-width:1120px;margin:auto;padding:2rem 1rem 4rem}
+    .android-main h1,.android-main h2{text-align:left}
+    .android-main h1{font-size:clamp(1.8rem,3.3vw,2.7rem);line-height:1.2;margin:1rem 0 1.5rem}
+    .android-main h2{font-size:clamp(1.65rem,2.8vw,2.3rem);line-height:1.25}
+    .android-intro{margin:1.5rem 0 2rem;line-height:1.75;text-align:left}
+    .android-table-wrap{overflow-x:auto;border:1px solid rgba(160,160,160,.55);border-radius:12px;margin:1.5rem 0}
+    .android-table{width:100%;min-width:740px;table-layout:fixed;border-collapse:collapse;text-align:center}
+    .android-table th,.android-table td{padding:1rem .65rem;border-bottom:1px solid rgba(160,160,160,.45)}
+    .android-table thead th{vertical-align:middle;background:rgba(180,140,54,.09)}
+    .android-table tbody tr:nth-child(even){background:rgba(255,255,255,.035)}
+    .android-app-icon{display:block;width:88px;height:88px;object-fit:contain;margin:0 auto .55rem;border-radius:12px;transition:transform .2s ease;transform-origin:center}
+    .android-table thead th:hover .android-app-icon{animation:android-icon-shimmy .5s ease-in-out;transform:scale(1.08)}
+    @keyframes android-icon-shimmy{0%,100%{transform:rotate(0deg) scale(1.08)}25%{transform:rotate(-5deg) scale(1.08)}50%{transform:rotate(4deg) scale(1.08)}75%{transform:rotate(-2deg) scale(1.08)}}
+    @media(prefers-reduced-motion:reduce){.android-app-icon{transition:none}.android-table thead th:hover .android-app-icon{animation:none;transform:none}}
+    .android-table thead th:first-child,.android-table tbody th.android-step{border-right:2px solid rgba(190,190,190,.7)}
+    .android-table tbody tr:last-child th,.android-table tbody tr:last-child td{border-bottom:0}
+    .android-step{text-align:left;font-weight:700}
+    .android-step small{display:block;font-weight:700;font-size:1em;color:#d8b34c;margin-top:.3rem}
+    .android-group-cell{text-align:center}
+    .android-app-icon-xrate{border:2px solid #d8b34c;box-sizing:border-box}
+    .android-app-name{font-weight:700;font-size:1.18rem;color:#d8b34c}
+    .android-action{display:inline-block;padding:.7rem 1rem;border-radius:7px;background:#b48c36;color:#101010!important;font-weight:700;text-decoration:none;white-space:nowrap}
+    .android-action:hover{filter:brightness(1.12)}
+    .android-action-disabled{color:#969696;font-weight:500;font-size:.92rem;white-space:nowrap}
+    .android-status{font-weight:700;color:#9b9b9b}
+    .android-status-available{color:#58c785}
+    .android-notes{margin:1.5rem 0;line-height:1.65;text-align:left}
+    .android-ending{text-align:left;margin:2rem 0;line-height:1.7}
+    .android-ending a{color:#d8b34c}
+    .android-back{display:inline-block;margin-bottom:1.5rem}
+    @media(max-width:600px){.android-main{padding:1.25rem .75rem 3rem}.android-table th,.android-table td{padding:.8rem .5rem}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <img src="assets/images/logo-banner.png" alt="Highground Studios" class="banner-logo">
+  </header>
+  <main class="android-main">
+    <a href="index.html" class="back-link android-back" id="android-back">← BACK TO HIGHGROUND STUDIOS</a>
+    <h1>ANDROID INSTALLATION</h1>
+    <div class="android-intro">
+      <p>Welcome to our Android installation page, and thank you for your interest in our apps.</p>
+      <p>Our Android apps are currently available through Google Play's early-access testing process. There are a few steps involved, thanks to Google's requirements, but we've made things as straightforward as possible.</p>
+      <p>First, join our Google Group. Next, opt in to the app you'd like to try using its own tester link. Finally, install it through Google Play. You only need to join the Google Group once, even if you want to install several apps.</p>
+      <p>You'll find all the links in our handy installation table below.</p>
+    </div>
+    <div class="android-table-wrap">
+      <table class="android-table">
+        <colgroup><col style="width:150px"><col span="4"></colgroup>
+        <thead>
+          <tr>
+            <th scope="col">&nbsp;</th>
+            <th scope="col"><img class="android-app-icon" src="assets/images/bs-icon.png" alt="Budget Saver icon"><span class="android-app-name">Budget Saver</span></th>
+            <th scope="col"><img class="android-app-icon" src="assets/images/gp-icon.png" alt="Gym Pro icon"><span class="android-app-name">Gym Pro</span></th>
+            <th scope="col"><img class="android-app-icon" src="assets/images/ps-icon.png" alt="Pool Shark icon"><span class="android-app-name">Pool Shark</span></th>
+            <th scope="col"><img class="android-app-icon android-app-icon-xrate" src="assets/images/xr-icon.png" alt="XRate icon"><span class="android-app-name">XRate</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="android-step">Step 1</th>
+            <td colspan="4" class="android-group-cell"><a class="android-action" href="https://groups.google.com/g/highground-studios-testers" target="_blank" rel="noopener noreferrer">JOIN GOOGLE GROUP</a><p>Join our Google Group using the email address linked to your Play Store account.</p></td>
+          </tr>
+          <tr>
+            <th scope="row" class="android-step">Step 2<small>Opt In</small></th>
+            <td><span class="android-action-disabled" aria-label="Budget Saver opt-in unavailable">UNAVAILABLE</span></td>
+            <td><span class="android-action-disabled" aria-label="Gym Pro opt-in unavailable">UNAVAILABLE</span></td>
+            <td><a class="android-action" href="https://play.google.com/apps/testing/com.highgroundstudios.poolshark" target="_blank" rel="noopener noreferrer">OPT IN</a></td>
+            <td><a class="android-action" href="https://play.google.com/apps/testing/com.highgroundstudios.xrate" target="_blank" rel="noopener noreferrer">OPT IN</a></td>
+          </tr>
+          <tr>
+            <th scope="row" class="android-step">Step 3<small>Install</small></th>
+            <td><span class="android-action-disabled" aria-label="Budget Saver installation unavailable">UNAVAILABLE</span></td>
+            <td><span class="android-action-disabled" aria-label="Gym Pro installation unavailable">UNAVAILABLE</span></td>
+            <td><a class="android-action" href="https://play.google.com/store/apps/details?id=com.highgroundstudios.poolshark" target="_blank" rel="noopener noreferrer">INSTALL</a></td>
+            <td><a class="android-action" href="https://play.google.com/store/apps/details?id=com.highgroundstudios.xrate" target="_blank" rel="noopener noreferrer">INSTALL</a></td>
+          </tr>
+          <tr>
+            <th scope="row" class="android-step">Status</th>
+            <td class="android-status">Final Preparations</td>
+            <td class="android-status">Closed Testing</td>
+            <td class="android-status android-status-available">Available</td>
+            <td class="android-status android-status-available">Available</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="android-notes">
+      <p><strong>Budget Saver:</strong> Undergoing final preparations. It will be available for early access soon.</p>
+      <p><strong>Gym Pro:</strong> Currently unavailable due to final testing prior to public release.</p>
+    </div>
+    <div class="android-ending">
+      <h2>ENJOY THE APPS!</h2>
+      <p>Feedback is always welcome, but there's no obligation to provide it. If you have any questions or experience difficulty installing an app, please <a href="index.html#contact">contact us</a>.</p>
+    </div>
+    <a href="index.html" class="back-link android-back" id="android-back-bottom">← BACK TO HIGHGROUND STUDIOS</a>
+  </main>
+  <script>
+    // Return to the app section that linked here, including when opened from a file.
+    (function () {
+      var valid = ['gympro', 'poolshark', 'xrate', 'budgetsaver'];
+      var from = new URLSearchParams(location.search).get('from');
+      var target = valid.includes(from) ? 'index.html#' + from : 'index.html#apps';
+      document.querySelectorAll('#android-back, #android-back-bottom').forEach(function (link) {
+        link.href = target;
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -510,3 +510,40 @@ h4 { font-size:1.15rem; }
 /* App actions sit below both text and screenshots, using the full section width. */
 .app-downloads-wide { max-width:1100px; margin:24px auto 0; display:flex; flex-direction:row; flex-wrap:wrap; align-items:center; gap:12px; }
 .gympro .app-downloads-wide { flex-wrap:wrap; }
+
+/* HOMEPAGE REFINEMENTS – 2026-11-09 */
+/* Keep the content left aligned; the Mechanix character cards remain centred. */
+.behind-highground h2 { text-align:left; }
+.work-intro-content { text-align:left; }
+.work-intro p { margin-left:0; margin-right:0; }
+.mechanix-section > h3 { max-width:1100px; margin-left:auto; margin-right:auto; padding:0 20px; text-align:left; box-sizing:border-box; }
+.mechanix-intro { text-align:left; }
+.mechanix-intro p { margin-left:0; margin-right:0; }
+.more-coming { text-align:left; }
+.more-coming-content { max-width:1100px; }
+.more-coming p { margin-left:0; margin-right:0; max-width:800px; }
+
+/* Slightly tighter spacing between homepage sections. */
+.behind-highground { padding-top:40px; padding-bottom:52px; }
+.work-intro { padding-top:38px; padding-bottom:16px; }
+.projects { padding-top:24px; padding-bottom:46px; }
+.vehicle-systems { padding-top:60px; padding-bottom:60px; }
+.apps-intro { padding-top:60px; padding-bottom:30px; }
+.jarjar,.gympro,.xrate,.poolshark { padding-top:60px; padding-bottom:60px; }
+.highground-clothing { padding-top:60px; padding-bottom:60px; }
+.more-coming { padding-top:70px; padding-bottom:65px; }
+
+/* Contact Us */
+.contact-section { padding:60px 20px 85px; }
+.contact-content { max-width:1100px; margin:0 auto; text-align:left; }
+.contact-content h2 { margin-bottom:25px; }
+.contact-content p { max-width:800px; margin:0 0 18px; line-height:1.7; font-size:1.05rem; }
+.contact-email-button { display:inline-flex; align-items:center; justify-content:center; gap:10px; margin-top:12px; padding:14px 24px; border:1px solid #d4af37; border-radius:6px; background:#d4af37; color:#101010; font-size:14px; font-weight:700; letter-spacing:1px; text-decoration:none; transition:background .2s ease,transform .2s ease; }
+.contact-email-button:hover { background:#e7c65a; transform:translateY(-2px); }
+.contact-email-button:focus-visible { outline:2px solid #fff; outline-offset:4px; }
+@media (max-width:768px) {
+  .jarjar,.gympro,.xrate,.poolshark { padding-top:42px; padding-bottom:42px; }
+  .vehicle-systems,.highground-clothing { padding-top:45px; padding-bottom:45px; }
+  .more-coming { padding-top:50px; padding-bottom:45px; }
+  .contact-section { padding:45px 20px 65px; }
+}
