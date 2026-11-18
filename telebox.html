@@ -7,10 +7,118 @@
     <title>TeleBox v0.3.56 | Highground Studios</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="assets/images/logo-clean.png">
+
+    <style>
+        /* TeleBox page refinements */
+        .telebox-card {
+            margin-bottom: 20px;
+        }
+
+        .telebox-card h3 {
+            margin-bottom: 18px;
+        }
+
+        .telebox-feature {
+            margin-bottom: 16px;
+        }
+
+        .telebox-feature:last-child {
+            margin-bottom: 0;
+        }
+
+        .telebox-feature strong {
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .telebox-download {
+            margin-top: 26px;
+            padding-top: 22px;
+            border-top: 1px solid #333;
+        }
+
+        .telebox-download h3 {
+            margin-bottom: 10px;
+        }
+
+        .telebox-download p {
+            margin-bottom: 18px;
+        }
+
+        .telebox-download-button {
+            display: inline-block;
+            padding: 13px 24px;
+            background: #e6b422;
+            color: #111 !important;
+            font-weight: 700;
+            font-size: 14px;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.2s ease;
+        }
+
+        .telebox-download-button:hover {
+            background: #ffd34d;
+        }
+
+        .telebox-release {
+            padding: 16px 0;
+            border-bottom: 1px solid #303030;
+        }
+
+        .telebox-release:first-of-type {
+            padding-top: 0;
+        }
+
+        .telebox-release:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .telebox-release h4 {
+            margin: 0 0 8px;
+            font-size: 15px;
+            color: #fff;
+        }
+
+        .telebox-release p {
+            margin: 0 0 10px;
+        }
+
+        .telebox-release a {
+            color: #e6b422;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .telebox-release a:hover {
+            text-decoration: underline;
+        }
+
+        .telebox-status p {
+            margin-bottom: 10px;
+        }
+
+        .telebox-status p:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 600px) {
+            .telebox-download-button {
+                display: block;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <header class="site-header">
-        <img src="assets/images/logo-banner.png" alt="Highground Studios" class="banner-logo">
+        <img
+            src="assets/images/logo-banner.png"
+            alt="Highground Studios"
+            class="banner-logo"
+        >
     </header>
 
     <main>
@@ -18,6 +126,7 @@
             <div class="gympro-guide-content">
 
                 <h1>TELEBOX</h1>
+
                 <p class="gympro-guide-version">
                     ANDROID IPTV PLAYER · V0.3.56
                 </p>
@@ -33,103 +142,109 @@
 
                 <div class="gympro-guide-grid">
 
-                    <div class="gympro-guide-card gympro-guide-card-wide">
+                    <!-- FEATURES -->
+
+                    <div class="gympro-guide-card gympro-guide-card-wide telebox-card">
                         <h3>WHAT TELEBOX DOES</h3>
 
-                        <p>
-                            Browse films, series and live TV with
+                        <div class="telebox-feature">
+                            <strong>Browse Your Content</strong>
+                            Browse films, series and live TV using
                             List, Image and Grid views.
-                        </p>
+                        </div>
 
-                        <p>
-                            Find titles using search, categories
-                            and sorting. Save favourites, mark titles
-                            as watched and return to programmes
-                            you've started.
-                        </p>
+                        <div class="telebox-feature">
+                            <strong>Find &amp; Organise</strong>
+                            Search by title, browse categories,
+                            sort your catalogue, save favourites
+                            and mark titles as watched.
+                        </div>
 
-                        <p>
-                            Download films and individual TV episodes
-                            for offline viewing. Manage downloads
-                            with queueing, pause and resume controls,
-                            and progress tracking.
-                        </p>
+                        <div class="telebox-feature">
+                            <strong>Offline Viewing</strong>
+                            Download films and individual TV
+                            episodes to watch without an
+                            internet connection.
+                        </div>
 
-                        <p>
-                            Adjust streaming buffer settings and
-                            playback tracks where supported.
-                        </p>
+                        <div class="telebox-feature">
+                            <strong>Playback Controls</strong>
+                            Adjust streaming buffer settings
+                            and playback tracks where supported.
+                        </div>
 
-                        <p>
-                            TeleBox requires your own compatible IPTV
-                            provider account using Xtream Codes.
-                            It does not provide TV channels,
-                            subscriptions or streaming content.
-                        </p>
+                        <div class="telebox-feature">
+                            <strong>Your IPTV Provider</strong>
+                            TeleBox requires your own compatible
+                            Xtream Codes IPTV account. It does
+                            not provide channels, subscriptions
+                            or streaming content.
+                        </div>
                     </div>
 
-                    <div class="gympro-guide-card gympro-guide-card-wide">
+                    <!-- LATEST RELEASE -->
+
+                    <div class="gympro-guide-card gympro-guide-card-wide telebox-card">
                         <h3>WHAT'S NEW IN V0.3.56</h3>
 
-                        <p>
-                            <strong>Offline Downloads</strong><br>
-                            Download films and individual TV series
-                            episodes to watch without an internet
-                            connection.
-                        </p>
+                        <div class="telebox-feature">
+                            <strong>Offline Downloads</strong>
+                            Download films and individual TV
+                            series episodes for offline viewing.
+                        </div>
 
-                        <p>
-                            <strong>Download Manager</strong><br>
+                        <div class="telebox-feature">
+                            <strong>Download Manager</strong>
                             Queue multiple downloads, pause and
                             resume transfers, monitor progress
                             and manage completed files.
-                        </p>
+                        </div>
 
-                        <p>
-                            <strong>Android TV Navigation</strong><br>
+                        <div class="telebox-feature">
+                            <strong>Android TV Navigation</strong>
                             Improved navigation controls for
                             Android TV devices and tablets.
-                        </p>
+                        </div>
 
-                        <p>
-                            <strong>Responsive Layout</strong><br>
-                            Refined catalogue navigation in both
+                        <div class="telebox-feature">
+                            <strong>Responsive Layout</strong>
+                            Refined catalogue navigation in
                             portrait and landscape orientations.
-                        </p>
+                        </div>
+
+                        <!-- PRIMARY DOWNLOAD -->
+
+                        <div class="telebox-download">
+                            <h3>DOWNLOAD TELEBOX</h3>
+
+                            <p>
+                                Latest Android APK · Version 0.3.56
+                            </p>
+
+                            <a
+                                class="telebox-download-button"
+                                href="https://github.com/Odins-Beard/highground-studios/releases/download/telebox-v0.3.56/TeleBox.v0.3.56.apk"
+                            >
+                                DOWNLOAD TELEBOX v0.3.56
+                            </a>
+                        </div>
                     </div>
 
-                </div>
+                    <!-- DEVELOPMENT STATUS -->
 
-                <div class="gympro-guide-more">
-                    <h2>DOWNLOAD TELEBOX</h2>
-
-                    <p>
-                        Latest Android APK · Version 0.3.56
-                    </p>
-
-                    <p class="gympro-footer-links">
-                        <a href="https://github.com/Odins-Beard/highground-studios/releases/download/telebox-v0.3.56/TeleBox.v0.3.56.apk">
-                            DOWNLOAD TELEBOX APK
-                        </a>
-                    </p>
-                </div>
-
-                <div class="gympro-guide-grid">
-
-                    <div class="gympro-guide-card gympro-guide-card-wide">
+                    <div class="gympro-guide-card gympro-guide-card-wide telebox-card telebox-status">
                         <h3>DEVELOPMENT STATUS</h3>
 
                         <p>
-                            TeleBox is under active development.
-                            Further Android TV compatibility,
-                            navigation and playback testing
-                            is ongoing.
+                            TeleBox is under active development,
+                            with further Android TV compatibility,
+                            navigation and playback testing ongoing.
                         </p>
 
                         <p>
                             The custom Play/Pause overlay is being
-                            refined for improved visibility and
-                            positioning.
+                            refined for improved visibility
+                            and positioning.
                         </p>
 
                         <p>
@@ -139,45 +254,55 @@
                         </p>
                     </div>
 
-                    <div class="gympro-guide-card gympro-guide-card-wide">
+                    <!-- PREVIOUS RELEASES -->
+
+                    <div class="gympro-guide-card gympro-guide-card-wide telebox-card">
                         <h3>PREVIOUS RELEASES</h3>
 
-                        <p>
-                            <strong>v0.3.49 — Performance &amp; Playback</strong><br>
-                            Improved catalogue performance.
-                            Added playback track selection and
-                            buffer controls.
-                            <br>
+                        <div class="telebox-release">
+                            <h4>v0.3.49 — Performance &amp; Playback</h4>
+
+                            <p>
+                                Improved catalogue performance.
+                                Added playback track selection
+                                and buffer controls.
+                            </p>
+
                             <a href="https://github.com/Odins-Beard/highground-studios/releases/download/telebox-v0.3.49/TeleBox.v0.3.49.apk">
                                 Download v0.3.49 APK
                             </a>
-                        </p>
+                        </div>
 
-                        <p>
-                            <strong>v0.3.31 — Android TV Improvements</strong><br>
-                            Initial improvements to Android TV
-                            navigation. Catalogue refreshes
-                            still caused performance issues.
-                            <br>
+                        <div class="telebox-release">
+                            <h4>v0.3.31 — Android TV Improvements</h4>
+
+                            <p>
+                                Initial improvements to Android TV
+                                navigation. Catalogue refreshes
+                                still caused performance issues.
+                            </p>
+
                             <a href="https://github.com/Odins-Beard/highground-studios/releases/download/telebox-v0.3.31/TeleBox.v0.3.31.apk">
                                 Download v0.3.31 APK
                             </a>
-                        </p>
+                        </div>
 
-                        <p>
-                            <strong>v0.3.25 — Mobile Playback</strong><br>
-                            Working mobile playback with buffering.
-                            Android TV remote focus navigation
-                            was not yet functional.
-                            <br>
+                        <div class="telebox-release">
+                            <h4>v0.3.25 — Mobile Playback</h4>
+
+                            <p>
+                                Working mobile playback with buffering.
+                                Android TV remote focus navigation
+                                was not yet functional.
+                            </p>
+
                             <a href="https://github.com/Odins-Beard/highground-studios/releases/download/telebox-v0.3.25/TeleBox.v0.3.25.apk">
                                 Download v0.3.25 APK
                             </a>
-                        </p>
+                        </div>
                     </div>
 
                 </div>
-
             </div>
         </section>
     </main>
