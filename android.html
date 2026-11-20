@@ -19,8 +19,9 @@
     .android-table tbody tr:nth-child(even){background:rgba(255,255,255,.035)}
     .android-app-icon{display:block;width:88px;height:88px;object-fit:contain;margin:0 auto .55rem;border-radius:12px;transition:transform .2s ease;transform-origin:center}
     .android-table thead th:hover .android-app-icon{animation:android-icon-shimmy .5s ease-in-out;transform:scale(1.08)}
+    .android-public-table tbody td:first-child:hover .android-app-icon{animation:android-icon-shimmy .5s ease-in-out;transform:scale(1.08)}
     @keyframes android-icon-shimmy{0%,100%{transform:rotate(0deg) scale(1.08)}25%{transform:rotate(-5deg) scale(1.08)}50%{transform:rotate(4deg) scale(1.08)}75%{transform:rotate(-2deg) scale(1.08)}}
-    @media(prefers-reduced-motion:reduce){.android-app-icon{transition:none}.android-table thead th:hover .android-app-icon{animation:none;transform:none}}
+    @media(prefers-reduced-motion:reduce){.android-app-icon{transition:none}.android-table thead th:hover .android-app-icon,.android-public-table tbody td:first-child:hover .android-app-icon{animation:none;transform:none}}
     .android-table thead th:first-child,.android-table tbody th.android-step{border-right:2px solid rgba(190,190,190,.7)}
     .android-table tbody tr:last-child th,.android-table tbody tr:last-child td{border-bottom:0}
     .android-step{text-align:left;font-weight:700}
@@ -48,54 +49,48 @@
     <a href="index.html" class="back-link android-back" id="android-back">← BACK TO HIGHGROUND STUDIOS</a>
     <h1>ANDROID INSTALLATION</h1>
     <div class="android-intro">
-      <p>Welcome to our Android installation page, and thank you for your interest in our apps.</p>
-      <p>Our Android apps are currently available through Google Play's early-access testing process. There are a few steps involved, thanks to Google's requirements, but we've made things as straightforward as possible.</p>
-      <p>First, join our Google Group. Next, opt in to the app you'd like to try using its own tester link. Finally, install it through Google Play. You only need to join the Google Group once, even if you want to install several apps.</p>
-      <p>You'll find all the links in our handy installation table below.</p>
+      <p>Welcome to our Android installation page. Choose an app below to get started.</p>
+    </div>
+    <h2>AVAILABLE ON GOOGLE PLAY</h2>
+    <p class="android-notes">These are our publicly released apps, available directly on Google Play.</p>
+    <div class="android-table-wrap">
+      <table class="android-table android-public-table" style="min-width:0">
+        <thead><tr><th scope="col">App</th><th scope="col">About</th><th scope="col">Download</th></tr></thead>
+        <tbody><tr>
+          <td><img class="android-app-icon" src="assets/images/gp-icon.png" alt="Gym Pro icon"><span class="android-app-name">Gym Pro</span></td>
+          <td>Plan, customise and track your workouts with simple controls and built-in rest timers.</td>
+          <td><a class="android-action" href="https://play.google.com/store/apps/details?id=com.highgroundstudios.gympro" target="_blank" rel="noopener noreferrer">GOOGLE PLAY</a></td>
+        </tr></tbody>
+      </table>
+    </div>
+    <h2>EARLY ACCESS — ANDROID TESTING</h2>
+    <div class="android-notes">
+      <p>The apps below are available through Google Play early-access testing. First join our Google Group using the email address linked to your Play Store account, then opt in to each app you want to try and install it. You only need to join the group once.</p>
     </div>
     <div class="android-table-wrap">
       <table class="android-table">
-        <colgroup><col style="width:150px"><col span="4"></colgroup>
-        <thead>
-          <tr>
-            <th scope="col">&nbsp;</th>
-            <th scope="col"><img class="android-app-icon" src="assets/images/bs-icon.png" alt="Budget Saver icon"><span class="android-app-name">Budget Saver</span></th>
-            <th scope="col"><img class="android-app-icon" src="assets/images/gp-icon.png" alt="Gym Pro icon"><span class="android-app-name">Gym Pro</span></th>
-            <th scope="col"><img class="android-app-icon" src="assets/images/ps-icon.png" alt="Pool Shark icon"><span class="android-app-name">Pool Shark</span></th>
-            <th scope="col"><img class="android-app-icon android-app-icon-xrate" src="assets/images/xr-icon.png" alt="XRate icon"><span class="android-app-name">XRate</span></th>
-          </tr>
-        </thead>
+        <colgroup><col style="width:150px"><col span="3"></colgroup>
+        <thead><tr>
+          <th scope="col">&nbsp;</th>
+          <th scope="col"><img class="android-app-icon" src="assets/images/bs-icon.png" alt="Budget Saver icon"><span class="android-app-name">Budget Saver</span></th>
+          <th scope="col"><img class="android-app-icon" src="assets/images/ps-icon.png" alt="Pool Shark icon"><span class="android-app-name">Pool Shark</span></th>
+          <th scope="col"><img class="android-app-icon android-app-icon-xrate" src="assets/images/xr-icon.png" alt="XRate icon"><span class="android-app-name">XRate</span></th>
+        </tr></thead>
         <tbody>
-          <tr>
-            <th scope="row" class="android-step">Step 1</th>
-            <td colspan="4" class="android-group-cell"><a class="android-action" href="https://groups.google.com/g/highground-studios-testers" target="_blank" rel="noopener noreferrer">JOIN GOOGLE GROUP</a><p>Join our Google Group using the email address linked to your Play Store account.</p></td>
-          </tr>
-          <tr>
-            <th scope="row" class="android-step">Step 2<small>Opt In</small></th>
+          <tr><th scope="row" class="android-step">Step 1</th><td colspan="3" class="android-group-cell"><a class="android-action" href="https://groups.google.com/g/highground-studios-testers" target="_blank" rel="noopener noreferrer">JOIN GOOGLE GROUP</a><p>Join once using your Google Play account email.</p></td></tr>
+          <tr><th scope="row" class="android-step">Step 2<small>Opt In</small></th>
             <td><a class="android-action" href="https://play.google.com/apps/testing/com.highgroundstudios.budgetsaver" target="_blank" rel="noopener noreferrer">OPT IN</a></td>
-            <td><span class="android-action-disabled" aria-label="Gym Pro opt-in unavailable">UNAVAILABLE</span></td>
             <td><a class="android-action" href="https://play.google.com/apps/testing/com.highgroundstudios.poolshark" target="_blank" rel="noopener noreferrer">OPT IN</a></td>
             <td><a class="android-action" href="https://play.google.com/apps/testing/com.highgroundstudios.xrate" target="_blank" rel="noopener noreferrer">OPT IN</a></td>
           </tr>
-          <tr>
-            <th scope="row" class="android-step">Step 3<small>Install</small></th>
+          <tr><th scope="row" class="android-step">Step 3<small>Install</small></th>
             <td><a class="android-action" href="https://play.google.com/store/apps/details?id=com.highgroundstudios.budgetsaver" target="_blank" rel="noopener noreferrer">INSTALL</a></td>
-            <td><span class="android-action-disabled" aria-label="Gym Pro installation unavailable">UNAVAILABLE</span></td>
             <td><a class="android-action" href="https://play.google.com/store/apps/details?id=com.highgroundstudios.poolshark" target="_blank" rel="noopener noreferrer">INSTALL</a></td>
             <td><a class="android-action" href="https://play.google.com/store/apps/details?id=com.highgroundstudios.xrate" target="_blank" rel="noopener noreferrer">INSTALL</a></td>
           </tr>
-          <tr>
-            <th scope="row" class="android-step">Status</th>
-            <td class="android-status android-status-available">Available</td>
-            <td class="android-status">Closed Testing</td>
-            <td class="android-status android-status-available">Available</td>
-            <td class="android-status android-status-available">Available</td>
-          </tr>
+          <tr><th scope="row" class="android-step">Status</th><td class="android-status android-status-available">Available for Early Access</td><td class="android-status android-status-available">Available for Early Access</td><td class="android-status android-status-available">Available for Early Access</td></tr>
         </tbody>
       </table>
-    </div>
-    <div class="android-notes">
-      <p><strong>Gym Pro:</strong> Currently unavailable due to final testing prior to public release.</p>
     </div>
     <div class="android-ending">
       <h2>ENJOY THE APPS!</h2>
